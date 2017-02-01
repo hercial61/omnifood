@@ -18,6 +18,15 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom:1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+
+}
 /* ----------------------------- */
 /* REUSABLE COMPONENTS */
 /* ----------------------------- */
@@ -93,6 +102,37 @@ h2:after {
     display: block;
     color: #e67e22;
     margin-bottom: 10px;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+
+    /* secretss to alignt icons and text*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/* --------- LINKS ---------- */
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 1px;
+    transition: border-bottom 0.2s, color 0.2s
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
 }
 
 /* --------- BUTTONS ---------- */
@@ -238,6 +278,75 @@ header {
 .meal-photo img:hover {
     transform: scale(1.03);
     opacity: 1;
+}
+
+/* ----------------------------- */
+/* HOW IT WORKS */
+/* ----------------------------- */
+
+.section-steps {
+    background-color: #f4f4f4;
+}
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+.works-step div {
+    color:#e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    font-size: 150%;
+    padding: 5px;
+    float: left;
+    margin-right: 25px;
+}
+
+.button-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.button-app:link,
+.button-app:visited {
+    border: 0;
+}
+
+/* ----------------------------- */
+/* CITIES */
+/* ----------------------------- */
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
 }
 
 
