@@ -470,8 +470,13 @@ textarea {
     padding: 7px;
     border-radius: 3px;
     border: 1px solid #ccc;
+    font-family: inherit;
+    font-weight: inherit;
 }
 
+option {
+    font-weight: inherit;
+}
 textarea {
     height: 100px;
 }
